@@ -2,7 +2,7 @@
 import { Droppable } from '@hello-pangea/dnd';
 import { Task, useBoardStore } from '../store/boardStore';
 import TaskCard from './TaskCard';
-import { PlusIcon, EllipsisHorizontalIcon } from '@heroicons/react/24/outline'; // New icons
+import { PlusIcon, EllipsisHorizontalIcon } from '@heroicons/react/24/outline';
 
 interface SwimlaneProps {
     status: Task['status'];
@@ -27,7 +27,6 @@ export default function Swimlane({ status }: SwimlaneProps) {
 
     return (
         <div className={`flex-shrink-0 w-72 bg-gray-50 p-3 rounded-lg border-t-4 ${statusColors[status]} shadow-sm`}>
-            {/* Swimlane Header */}
             <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
                     <h2

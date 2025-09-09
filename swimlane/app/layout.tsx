@@ -4,9 +4,9 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 
 const poppins = Poppins({
-  weight: ['400', '500', '600', '700'], // optional, choose weights you need
+  weight: ['400', '500', '600', '700'], 
   subsets: ['latin'],
-  display: 'swap', // optional for better font loading
+  display: 'swap', 
 });
 
 export const metadata: Metadata = {

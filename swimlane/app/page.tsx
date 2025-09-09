@@ -1,7 +1,7 @@
 // app/page.tsx
 import Board from './components/Board';
-import TopBar from './components/TopBar'; // Import the new TopBar
-import ProjectHeader from './components/ProjectHeader'; // Import the new ProjectHeader
+import TopBar from './components/TopBar';
+import ProjectHeader from './components/ProjectHeader';
 import {
   HomeIcon,
   ClipboardDocumentListIcon,
@@ -16,7 +16,6 @@ import {
 } from '@heroicons/react/24/outline';
 
 function Sidebar() {
-  // ... (Your existing Sidebar component code remains the same)
   return (
     <aside className="w-[280px] bg-white p-4 border-r hidden md:flex flex-col">
       <div className="flex items-center justify-between p-2 mb-6 border rounded-md cursor-pointer hover:bg-gray-50">

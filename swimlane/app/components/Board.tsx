@@ -1,4 +1,3 @@
-// app/components/Board.tsx
 'use client';
 
 import { useEffect } from 'react';
@@ -42,7 +41,7 @@ export default function Board() {
 
     return (
         <DragDropContext onDragEnd={handleOnDragEnd}>
-            <div className="flex gap-4 p-6 min-h-full"> {/* Increased padding, adjusted gap */}
+            <div className="flex gap-4 p-6 min-h-full">
                 {statuses.map((status) => (
                     <Swimlane key={status} status={status} />
                 ))}
