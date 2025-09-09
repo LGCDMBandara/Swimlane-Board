@@ -1,23 +1,20 @@
-// app/store/boardStore.ts
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-// Define the type for a single task
 export interface Task {
     id: number;
     title: string;
     status: 'To Do' | 'In Progress' | 'Approved' | 'Reject';
     tag: string;
     priority: 'Low' | 'Medium' | 'High';
-    assignedTo?: string[]; // Array of initials or avatar URLs
-    dueDate?: string;     // e.g., "Due: 22, April, 2022"
-    comments?: number;    // Number of comments/discussions
-    reports?: number;     // Number of reports
+    assignedTo?: string[];
+    dueDate?: string;  
+    comments?: number; 
+    reports?: number; 
     attachments?: number;
-    hasImage?: boolean; // Number of attachments
+    hasImage?: boolean;
 }
 
-// Define the state shape (remains largely the same)
 interface BoardState {
     tasks: Task[];
     draggedTask: number | null;
